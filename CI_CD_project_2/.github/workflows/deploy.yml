@@ -25,9 +25,9 @@ jobs:
     
     - name: Sync files to S3
       run: |
-        aws s3 sync . s3://[yourname]-github-actions-site/ --exclude ".git/*" --exclude ".github/*"
+        aws s3 sync . s3://nigatie-github-action-sit/ --exclude ".git/*" --exclude ".github/*"
     
     - name: Invalidate CloudFront (if using)
       run: |
-        echo "Deployment completed to s3://[yourname]-github-actions-site"
+        echo "Deployment completed to s3://nigatie-github-action-sit"
         echo "Website URL: http://nigatie-github-action-sit.s3-website-us-east-1.amazonaws.com"
